@@ -1,6 +1,8 @@
 body
 {
+  position: relative;
   margin: 0;
+
   background-color: hsl(225, 100%, 94%);
     --color-title: hsl(223, 47%, 23%);
     --color-p: hsl(224, 23%, 55%);
@@ -9,11 +11,20 @@ body
   min-height: 100vh;
 }
 
+.background-img
+{
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+}
+
 .container
 {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: space-around;
+  width: 100%;
 }
 
 .header-img
@@ -154,5 +165,12 @@ body
 
 /* ----------------------------------------------------- */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution 
+{ 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a 
+{ 
+  color: hsl(228, 45%, 44%); 
+}
