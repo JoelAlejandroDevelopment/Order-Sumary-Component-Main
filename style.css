@@ -1,0 +1,160 @@
+body
+{
+  margin: 0;
+  background-color: hsl(225, 100%, 94%);
+    --color-title: hsl(223, 47%, 23%);
+    --color-p: hsl(224, 23%, 55%);
+    --font: 'Red Hat Display', sans-serif;
+  font-family: var(--font);
+  min-height: 100vh;
+}
+
+.container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.header-img
+{
+  width: 100%;
+  border-radius: 20px 20px 0 0 ;
+}
+
+.card
+{
+  width: 95vw;
+  background-color: white;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+
+  border-radius: 20px;
+}
+
+@media screen  and (max-width: 1440px) {
+  .card
+  {
+    width: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+.title-1
+{
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-title);
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.paragraph
+{
+  color: var(--color-p);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 2em;
+  margin-left: 2em;
+
+  text-align: center;
+}
+
+
+.sell-place
+{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  display: flex;
+  text-align: space;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.title-sell
+{
+  font-weight: 800;
+  color: var(--color-title);
+}
+
+.price-sell
+{
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-p);
+}
+
+.change
+{
+  font-weight: 800;
+  line-height: 52.8px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+
+  color: hsl(245, 75%, 52%);
+}
+.change:hover
+{
+  color: var(--color-p);
+}
+
+.button
+{
+  font-weight: 800;
+  font-family: var(--font);
+}
+
+.button
+{
+  display: block;
+
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:15px 60px;
+  border: none;
+  border-radius: 10px
+
+}
+.b-first
+{
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+
+  margin-top: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 10%);
+  cursor: pointer;
+}
+.b-first:hover
+{
+  box-shadow: 0 10px 10px hsla(253, 75%, 52%, 0.247);
+  background-color: hsl(253, 75%, 52%);
+}
+
+.b-second
+{
+  background-color: inherit;
+  color: hsl(224, 23%, 55%);
+}
+.b-second:hover
+{
+  color: var(--color-title);
+  text-shadow: 0 0 10px hsl(223, 47%, 23%, 20%);
+}
+
+
+/* ----------------------------------------------------- */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
