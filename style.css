@@ -35,7 +35,7 @@ body
 
 .card
 {
-  width: 95vw;
+  width: 85vw;
   background-color: white;
 
   margin-top: 50px;
@@ -44,10 +44,10 @@ body
   border-radius: 20px;
 }
 
-@media screen  and (max-width: 1440px) {
+@media screen and (min-width: 600px) {
   .card
   {
-    width: 300px;
+    width: 350px;
     margin-right: 10px;
     margin-left: 10px;
   }
